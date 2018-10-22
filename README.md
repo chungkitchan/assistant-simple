@@ -16,7 +16,7 @@
 [![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/chungkitchan/assistant-simple&branch=master)
 
 1. The Deploy to IBM Cloud configuration should shown as below:  
-   ![IBM Cloud configuration](readme_images/app-deploy.png)
+   ![](readme_images/app-deploy.png "IBM Cloud configuration")
 
 1. In the Deploy to IBM Cloud: assistant-simple app, make sure the following input are filled correctly:   
    -  Toolchain Name
@@ -25,14 +25,14 @@
    -  Select a resource group  
       - click on th "Select a CF Organization (deprecated)" option below if it is not filled.
 
-1. Click on the ![Create +](readme_images/create-button.png) to create the IBM Cloud API Key, make sure the API key is filled after creation.
+1. Click on the ![](readme_images/create-button.png "Create +") to create the IBM Cloud API Key, make sure the API key is filled after creation.
 
 1. Ensure that the following fields are filled:  
    - Region  
    - Organization
    - Space
 
-1. Create on the ![Deploy Button](readme_images/deploy-button.png) to deploy the Application to IBM Cloud, it will take a while... Please do not close the browser.
+1. Create on the ![](readme_images/deploy-button.png "Deploy Button") to deploy the Application to IBM Cloud, it will take a while... Please do not close the browser.
 
 1. Once the application should be able to successufully build, however it may failed deploy stage as the application does not have all the credential to start properly. Once the deploy status completed (successfully or failed), continue the next section to configure the application credentail.
 
@@ -58,7 +58,7 @@
    | AUTHORIZED_USERS       | test:password                                |
 
 1. After filling up the NAME and VALUE the screen should look something like below:  
-   ![Configure Application Variables](readme_images/app-config.png)
+   ![](readme_images/app-config.png "Configure Application Variables")
 
 1. The parameter AUTHORIZED_USERS is to set the user name and password to log in to the chat bot, the format is userId:password
 
