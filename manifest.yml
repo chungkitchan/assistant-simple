@@ -1,5 +1,5 @@
 applications:
-- name: wealth-portfolio-management
+- name: assistant-simple
   command: npm start
   path: .
   memory: 256M
