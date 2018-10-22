@@ -13,7 +13,7 @@
     - Copy `username` and `password` values 
 
 1. Click on the Deploy to IBM Cloud button below:  
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/chungkit/assistant-simple&branch=master)
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/chungkitchan/assistant-simple&branch=master)
 
 1. The Deploy to IBM Cloud configuration should shown as below:  
    ![IBM Cloud configuration](readme_images/app-deploy.png)
