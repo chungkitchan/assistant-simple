@@ -34,7 +34,7 @@
 
 1. Create on the ![Deploy button](readme_images/deploy-button.png) to deploy the Application to IBM Cloud, it will take a while... Please do not close the browser.
 
-1. Once the application is successufully deployed continue the next section to configure the application.
+1. Once the application is successufully or failed deployed to IBM Cloud  continue the next section to configure the application.
 
 ### Configuring the application
 
@@ -44,17 +44,21 @@
 
 1. Select the dashboard in the Menu option to open the IBM cloud dashboard.
 
-1. Select the Wealth-Portfolio-Management application that was just deployed under cloud foundry applications section
+1. Select the Assistant-Simple application that was just deployed under cloud foundry applications section
 
 1. In the Wealth-Portfolio-Management application console, select Runtime.
 
-1. Select the "Environment variables" tab on the left panel. The screen be something like below:  
-   ![Configure Application Variables](readme_images/app-config.png)
+1. Select the Environment variable tab in the top center of the screen and set up the following User defined Environment variables in the NAME and VALUE table accordingly:  
 
-1. Set the following parameters accordingly:  
-   - ASSISTANT PASSWORD
-   - ASSISTANT USERNAME
-   - WORKSPACE_ID
+   | NAME                   |  VALUE                                       |
+   |------------------------|:---------------------------------------------|
+   | ASSISTANT USERNAME     | value from Watson Assistant user name        |
+   | ASSISTANT PASSWORD     | value from Watson Assistant password         |
+   | WORKSPACE_ID           | value from Watson Assistant Workspace Id     |
+   | AUTHORIZED_USERS       | test:password                                |
+
+1. After filling up the NAME and VALUE the screen should look something like below:  
+   ![Configure Application Variables](readme_images/app-config.png)
 
 1. The parameter AUTHORIZED_USERS is to set the user name and password to log in to the chat bot, the format is userId:password
 
