@@ -1,24 +1,10 @@
 <h1 align="center" style="border-bottom: none;">🚀 Watson Assistant (formerly Conversation) Sample Application</h1>
-<h3 align="center">This Node.js app demonstrates the Watson Assistant service in a simple chat interface simulating a cognitive car dashboard.</h3>
-<p align="center">
-  <a href="http://travis-ci.org/watson-developer-cloud/assistant-simple">
-    <img alt="Travis" src="https://travis-ci.org/watson-developer-cloud/assistant-simple.svg?branch=master">
-  </a>
-  <a href="#badge">
-    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
-  </a>
-</p>
-</p>
+<h3 align="center">This Node.js app demonstrates the Watson Assistant service in a simple chat interface simulating a cognitive car dashboard. This is forked from https://github.com/watson-developer-cloud/assistant-simple . Basic authentication is added to demostrate authenticated chat bot.</h3>
 
-![Demo](readme_images/demo.gif)
-
-You can view a [demo][demo_url] of this app.
-
-
-## Prerequisites
+##  Steps to deploy the Watson Assistant Sample Application
 
 1. Sign up for an [IBM Cloud account](https://console.bluemix.net/registration/).
-1. Download the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview).
+
 1. Create an instance of the Watson Assistant service and get your credentials:
     - Go to the [Watson Assistant](https://console.bluemix.net/catalog/services/conversation) page in the IBM Cloud Catalog.
     - Log in to your IBM Cloud account.
@@ -26,8 +12,11 @@ You can view a [demo][demo_url] of this app.
     - Click **Show** to view the service credentials.
     - Copy the `apikey` value, or copy the `username` and `password` values if your service instance doesn't provide an `apikey`.
     - Copy the `url` value.
+1. Click on the Deploy to IBM Cloud button below:  
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/watson-developer-cloud/assistant-simple&branch=master)
 
-## Configuring the application
+
+### Configuring the application
 
 1. In your IBM Cloud console, open the Watson Assistant service instance
 
