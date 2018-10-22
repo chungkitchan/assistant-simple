@@ -35,9 +35,11 @@
 
 ### Configuring the application
 
-1. Open [IBM Cloud console](http://console.bluemix.net) if it is not already opened. Select the Menu on the top right corner beside IBM Cloud.
+1. Open [IBM Cloud console](http://console.bluemix.net) if it is not already opened. 
 
-1. Select the dashboard to open the IBM cloud dashboard.
+1. Select the ![IBM Cloud Menu](readme_images/ibmcloud-menu.png) on the top right corner to get the Menu option.
+
+1. Select the dashboard in the Menu option to open the IBM cloud dashboard.
 
 1. Select the Wealth-Portfolio-Management application that was just deployed under cloud foundry applications section
 
