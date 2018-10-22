@@ -32,7 +32,7 @@
    - Organization
    - Space
 
-1. Create on the ![Deploy button](readme_images/deploy-button.png) to deploy the Application to IBM Cloud, it will take a while... Please do not close the browser.
+1. Create on the ![Deploy Button](readme_images/deploy-button.png) to deploy the Application to IBM Cloud, it will take a while... Please do not close the browser.
 
 1. Once the application should be able to successufully build, however it may failed deploy stage as the application does not have all the credential to start properly. Once the deploy status completed (successfully or failed), continue the next section to configure the application credentail.
 
