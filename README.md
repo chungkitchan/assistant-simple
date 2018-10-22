@@ -10,135 +10,50 @@
     - Log in to your IBM Cloud account.
     - Click **Create**.
     - Click **Show** to view the service credentials.
-    - Copy the `apikey` value, or copy the `username` and `password` values if your service instance doesn't provide an `apikey`.
-    - Copy the `url` value.
+    - Copy `username` and `password` values 
+
 1. Click on the Deploy to IBM Cloud button below:  
 [![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/watson-developer-cloud/assistant-simple&branch=master)
+
+1. In the Deploy to IBM Cloud: assistant-simple app, make sure the following input are filled correctly:   
+   -  Toolchain Name
+   -  Select Region  
+      - Select US South, if it is not filled.
+   -  Select a resource group  
+      - click on th "Select a CF Organization (deprecated)" option below if it is not filled.
+
+1. Click on the ![Create +](readme_images/create-button.png) to create the IBM Cloud API Key, make sure is filled in after creation.
+
+1. Ensure that the following fields are filled:  
+   - Region  
+   - Organization
+   - Space
+
+1. Create on the Deploy to deploy the Application to IBM Cloud
+
+1. Once the application is successufully deployed continue the next section to configure the application.
 
 
 ### Configuring the application
 
-1. In your IBM Cloud console, open the Watson Assistant service instance
+1. Open [IBM Cloud console](http://console.bluemix.net) if it is not already opened 
 
-2. Click the **Import workspace** icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local copy of the app project:
+1. Select the Wealth-Portfolio-Management application that was just deployed under cloud foundry applications section
 
-    `<project_root>/training/car_workspace.json`
+1. In the Wealth-Portfolio-Management application console, select Runtime.
 
-3. Select **Everything (Intents, Entities, and Dialog)** and then click **Import**. The car dashboard workspace is created.
+1. Select the "Environment variables" tab on the left panel. The screen be something like below:  
+   ![Configure Application Variables](readme_images/app-config.png)
 
-4. Click the menu icon in the upper-right corner of the workspace tile, and then select **View details**.
+1. Set the following parameters accordingly:  
+   - ASSISTANT PASSWORD
+   - ASSISTANT USERNAME
+   - WORKSPACE_ID
 
-5. Click the ![Copy](readme_images/copy_icon.png) icon to copy the workspace ID to the clipboard.
+1. The parameter AUTHORIZED_USERS is to set the user name and password to log in to the chat bot, the format is userId:password
 
-    ![Steps to get credentials](readme_images/assistant-simple.gif)
+1. Once completed setting the above save and restart the application
 
-6. In the application folder, copy the *.env.example* file and create a file called *.env*
+1. Once the application is restarted, click on the "Visit App URL" in the top left corner
 
-    ```
-    cp .env.example .env
-    ```
-
-7. Open the *.env* file and add the service credentials that you obtained in the previous step. The Watson SDK automaticaly locates the correct enviromental variables for either `username`, `password`, and `url` or the `apikey` and `url` credentials found in the *.env* file.
-
-    Example *.env* file that configures the `apikey` and `url` for a Watson Assistant service instance hosted in the US East region:
-
-    ```
-    ASSISTANT_IAM_APIKEY=X4rbi8vwZmKpXfowaS3GAsA7vdy17Qh7km5D6EzKLHL2
-    ASSISTANT_URL=https://gateway-wdc.watsonplatform.net/assistant/api
-    ```
-
-    - If your service instance uses `username` and `password` credentials, add the `ASSISTANT_USERNAME` and `ASSISTANT_PASSWORD` variables to the *.env* file.
-
-    Example *.env* file that configures the `username`, `password`, and `url` for a Watson Assistant service instance hosted in the US South region:
-
-    ```
-    ASSISTANT_USERNAME=522be-7b41-ab44-dec3-g1eab2ha73c6
-    ASSISTANT_PASSWORD=A4Z5BdGENrwu8
-    ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
-    ```
-    However, if your credentials contain an IAM API key, copy the `apikey` and `url` to the relevant fields.
-    ```JSON
-      {
-        "apikey": "ca2905e6-7b5d-4408-9192-e4d54d83e604",
-        "iam_apikey_description": "Auto generated apikey during resource-key ...",
-        "iam_apikey_name": "auto-generated-apikey-62b71334-3ae3-4609-be26-846fa59ece42",
-        "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-        "iam_serviceid_crn": "crn:v1:bluemix:public:iam...",
-        "url": "https://gateway-syd.watsonplatform.net/assistant/api"
-      }
-    ```
-    ```
-    ASSISTANT_IAM_APIKEY=ca2905e6-7b5d-4408-9192-e4d54d83e604
-    ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
-    ```
-
-8. Add the `WORKSPACE_ID` to the previous properties
-
-    ```
-    WORKSPACE_ID=522be-7b41-ab44-dec3-g1eab2ha73c6
-    ```
-
-## Running locally
-
-1. Install the dependencies
-
-    ```
-    npm install
-    ```
-
-1. Run the application
-
-    ```
-    npm start
-    ```
-
-1. View the application in a browser at `localhost:3000`
-
-## Deploying to IBM Cloud as a Cloud Foundry Application
-
-1. Login to IBM Cloud with the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview)
-
-    ```
-    ibmcloud login
-    ```
-
-1. Target a Cloud Foundry organization and space.
-
-    ```
-    ibmcloud target --cf
-    ```
-
-1. Edit the *manifest.yml* file. Change the **name** field to something unique.  
-  For example, `- name: my-app-name`.
-1. Deploy the application
-
-    ```
-    ibmcloud app push
-    ```
-
-1. View the application online at the app URL.  
-For example: https://my-app-name.mybluemix.net
-
-
-## License
-
-This sample code is licensed under Apache 2.0.  
-Full license text is available in [LICENSE](LICENSE).
-
-## Contributing
-
-See [CONTRIBUTING](CONTRIBUTING.md).
-
-## Open Source @ IBM
-
-Find more open source projects on the
-[IBM Github Page](http://ibm.github.io/).
-
-
-[demo_url]: http://conversation-simple.ng.bluemix.net/
-[doc_intents]: (https://console.bluemix.net/docs/services/conversation/intents-entities.html#planning-your-entities)
-[docs]: https://console.bluemix.net/docs/services/conversation/index.html
-[docs_landing]: (https://console.bluemix.net/docs/services/conversation/index.html)
-[node_link]: (http://nodejs.org/)
-[npm_link]: (https://www.npmjs.com/)
-[sign_up]: bluemix.net/registration
+1. Enter the user name and password according to the AUTHORIZED_USERS entry.
