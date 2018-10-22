@@ -15,6 +15,9 @@
 1. Click on the Deploy to IBM Cloud button below:  
 [![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/watson-developer-cloud/assistant-simple&branch=master)
 
+1. The Deploy to IBM Cloud configuration should shown as below:  
+   ![IBM Cloud configuration](readme_images/app-deploy.png)
+
 1. In the Deploy to IBM Cloud: assistant-simple app, make sure the following input are filled correctly:   
    -  Toolchain Name
    -  Select Region  
@@ -22,14 +25,14 @@
    -  Select a resource group  
       - click on th "Select a CF Organization (deprecated)" option below if it is not filled.
 
-1. Click on the ![Create +](readme_images/create-button.png) to create the IBM Cloud API Key, make sure is filled in after creation.
+1. Click on the ![Create +](readme_images/create-button.png) to create the IBM Cloud API Key, make sure the API key is filled after creation.
 
 1. Ensure that the following fields are filled:  
    - Region  
    - Organization
    - Space
 
-1. Create on the Deploy to deploy the Application to IBM Cloud, it will take a while... Please do not close the browser.
+1. Create on the ![Deploy button](readme_images/deploy-button.png) to deploy the Application to IBM Cloud, it will take a while... Please do not close the browser.
 
 1. Once the application is successufully deployed continue the next section to configure the application.
 
