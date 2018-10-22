@@ -29,14 +29,15 @@
    - Organization
    - Space
 
-1. Create on the Deploy to deploy the Application to IBM Cloud
+1. Create on the Deploy to deploy the Application to IBM Cloud, it will take a while... Please do not close the browser.
 
 1. Once the application is successufully deployed continue the next section to configure the application.
 
-
 ### Configuring the application
 
-1. Open [IBM Cloud console](http://console.bluemix.net) if it is not already opened 
+1. Open [IBM Cloud console](http://console.bluemix.net) if it is not already opened. Select the Menu on the top right corner beside IBM Cloud.
+
+1. Select the dashboard to open the IBM cloud dashboard.
 
 1. Select the Wealth-Portfolio-Management application that was just deployed under cloud foundry applications section
 
