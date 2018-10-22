@@ -1,4 +1,4 @@
-<h1 align="center" style="border-bottom: none;">🚀 Watson Assistant (formerly Conversation) Sample Application</h1>
+<h1 align="center" style="border-bottom: none;">🚀 Watson Assistant Simple Sample Application</h1>
 <h3 align="center">This Node.js app demonstrates the Watson Assistant service in a simple chat interface simulating a cognitive car dashboard. This is forked from https://github.com/watson-developer-cloud/assistant-simple . Basic authentication is added to demostrate authenticated chat bot.</h3>
 
 ##  Steps to deploy the Watson Assistant Sample Application
@@ -13,7 +13,7 @@
     - Copy `username` and `password` values 
 
 1. Click on the Deploy to IBM Cloud button below:  
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/watson-developer-cloud/assistant-simple&branch=master)
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/chungkit/assistant-simple&branch=master)
 
 1. The Deploy to IBM Cloud configuration should shown as below:  
    ![IBM Cloud configuration](readme_images/app-deploy.png)
@@ -48,7 +48,7 @@
 
 1. In the Wealth-Portfolio-Management application console, select Runtime.
 
-1. Select the Environment variable tab in the top center of the screen and set up the following User defined Environment variables in the NAME and VALUE table accordingly:  
+1. Select the Environment variable tab in the top center of the screen and set up the following User defined Environment variables in the NAME and VALUE table using the Add button:  
 
    | NAME                   |  VALUE                                       |
    |------------------------|:---------------------------------------------|
