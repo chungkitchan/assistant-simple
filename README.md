@@ -34,7 +34,7 @@
 
 1. Create on the ![Deploy button](readme_images/deploy-button.png) to deploy the Application to IBM Cloud, it will take a while... Please do not close the browser.
 
-1. Once the application is successufully or failed deployed to IBM Cloud  continue the next section to configure the application.
+1. Once the application should be able to successufully build, however it will failed deploy stage as the application does not have all the credential to start properly. Continue the next section to configure the application credentail.
 
 ### Configuring the application
 
