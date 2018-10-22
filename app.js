@@ -19,11 +19,17 @@
 var express = require('express'); // app server
 var bodyParser = require('body-parser'); // parser for post requests
 var AssistantV1 = require('watson-developer-cloud/assistant/v1'); // watson sdk
+var auth = require('./addons/basic-auth.js');
+var passport = require('passport');
+auth.init();
 
 var app = express();
 
 // Bootstrap application settings
-app.use(express.static('./public')); // load UI from public folder
+
+app.use('/',passport.authenticate('basic', { session: false }));
+app.use('/', express.static('./public')); // load UI from public folder
+
 app.use(bodyParser.json());
 
 // Create the service wrapper
@@ -32,8 +38,10 @@ var assistant = new AssistantV1({
   version: '2018-07-10'
 });
 
+
+
 // Endpoint to be call from the client side
-app.post('/api/message', function (req, res) {
+app.post('/api/message', passport.authenticate('basic', { session: false }), function (req, res) {
   var workspace = process.env.WORKSPACE_ID || '<workspace-id>';
   if (!workspace || workspace === '<workspace-id>') {
     return res.json({
