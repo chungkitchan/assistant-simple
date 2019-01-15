@@ -49,7 +49,10 @@
 1. In the Wealth-Portfolio-Management application console, select Runtime.
 
 1. Select the Environment variable tab in the top center of the screen and make sure the following User defined Environment variables in the NAME and VALUE table are setup based on below table:   
-   ** Note for Watson Assistant credential either setup ASSISTANT_IAM_APIKEY or ASSISTANT_USERNAME and ASSISTANT_PASSWORD    
+   ** Note for Watson Assistant credential either setup ASSISTANT_IAM_APIKEY or ASSISTANT_USERNAME and ASSISTANT_PASSWORD   
+   ** When viewing the "View API Details" option under the skill, if the "Username" is apikey, then use the password as the ASSISTANT_IAM_APIKEY  
+   ** When viewing the "View API Details" option under the skill, if the "Username" is a long string other than apikey, then setup ASSITANT_USERNAME & ASSISTANT_PASSWORD according to username & password    
+ 
 
    | NAME                   |  VALUE                                       |  REMARKS                                                                                       |
    |------------------------|:---------------------------------------------|:-----------------------------------------------------------------------------------------------|
