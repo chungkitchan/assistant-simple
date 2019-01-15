@@ -56,10 +56,10 @@
 
    | NAME                   |  VALUE                                       |  REMARKS                                                                                       |
    |------------------------|:---------------------------------------------|:-----------------------------------------------------------------------------------------------|
-   | ASSISTANT_IAM_APIKEY   | value from Watson Assistant user name        | Configure this only if the Watson Assistant is created using resource group based services     |
-   | ASSISTANT_USERNAME     | value from Watson Assistant user name        | Configure this only if the Watson Assistant is created using old cloudfoundry based services   |
-   | ASSISTANT_PASSWORD     | value from Watson Assistant password         | Configure this only if the Watson Assistant is created using old cloudfoundry based services   |        
-   | WORKSPACE_ID           | value from Watson Assistant Workspace Id     |                                                                                                |
+   | ASSISTANT_IAM_APIKEY   | Value from Watson Assistant password         | Configure this only if the Watson Assistant is created using resource group based services     |
+   | ASSISTANT_USERNAME     | Value from Watson Assistant user name        | Configure this only if the Watson Assistant is created using old cloudfoundry based services   |
+   | ASSISTANT_PASSWORD     | Value from Watson Assistant password         | Configure this only if the Watson Assistant is created using old cloudfoundry based services   |        
+   | WORKSPACE_ID           | Value from Watson Assistant Workspace Id     |                                                                                                |
    | AUTHORIZED_USERS       | test:password                                |                                                                                                |
 
 1. After filling up the NAME and VALUE the screen should look something like below:  
