@@ -7,4 +7,3 @@ coverage
 npm-debug.log
 .jshintrc
 .DS_Store
-manifest.yml

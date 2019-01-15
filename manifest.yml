@@ -6,8 +6,9 @@ applications:
   instances: 1
   env:
      WORKSPACE_ID: change-to-your-workspace-id
-     ASSISTANT_USERNAME: change-to-watson-assistant-username
-     ASSISTANT_PASSWORD: change-to-watson-assistant-password
+     ASSISTANT_IAM_APIKEY: change-to-watson-assistant-password (if the watson-assistant-username is apikeya)
+     ASSISTANT_USERNAME: change-to-watson-assistant-username (if the watson-assistant-username is not apikey)
+     ASSISTANT_PASSWORD: change-to-watson-assistant-password (if the watson-assistant-username is not apikey)
      ASSISTANT_VERSION: v1
      ASSISTANT_VERSION_DATE: 2017-05-26
      AUTHORIZED_USERS: test:password
