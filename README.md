@@ -48,14 +48,16 @@
 
 1. In the Wealth-Portfolio-Management application console, select Runtime.
 
-1. Select the Environment variable tab in the top center of the screen and make sure the following User defined Environment variables in the NAME and VALUE table are setup based on below table:  
+1. Select the Environment variable tab in the top center of the screen and make sure the following User defined Environment variables in the NAME and VALUE table are setup based on below table: 
+   ** Note for Watson Assistant credential either setup ASSISTANT_IAM_APIKEY or ASSISTANT_USERNAME and ASSISTANT_PASSWORD    
 
-   | NAME                   |  VALUE                                       |
-   |------------------------|:---------------------------------------------|
-   | ASSISTANT_USERNAME     | value from Watson Assistant user name        |
-   | ASSISTANT_PASSWORD     | value from Watson Assistant password         |
-   | WORKSPACE_ID           | value from Watson Assistant Workspace Id     |
-   | AUTHORIZED_USERS       | test:password                                |
+   | NAME                   |  VALUE                                       |  REMARKS                                                                                       |
+   |------------------------|:---------------------------------------------|:-----------------------------------------------------------------------------------------------|
+   | ASSISTANT_IAM_APIKEY   | value from Watson Assistant user name        | Configure this only if the Watson Assistant is created using resource group based services     |
+   | ASSISTANT_USERNAME     | value from Watson Assistant user name        | Configure this only if the Watson Assistant is created using old cloudfoundry based services   |
+   | ASSISTANT_PASSWORD     | value from Watson Assistant password         | Configure this only if the Watson Assistant is created using old cloudfoundry based services   |        
+   | WORKSPACE_ID           | value from Watson Assistant Workspace Id     |                                                                                                |
+   | AUTHORIZED_USERS       | test:password                                |                                                                                                |
 
 1. After filling up the NAME and VALUE the screen should look something like below:  
    ![](readme_images/app-config.png "Configure Application Variables")
