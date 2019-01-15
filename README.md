@@ -52,8 +52,8 @@
 
    | NAME                   |  VALUE                                       |
    |------------------------|:---------------------------------------------|
-   | ASSISTANT USERNAME     | value from Watson Assistant user name        |
-   | ASSISTANT PASSWORD     | value from Watson Assistant password         |
+   | ASSISTANT_USERNAME     | value from Watson Assistant user name        |
+   | ASSISTANT_PASSWORD     | value from Watson Assistant password         |
    | WORKSPACE_ID           | value from Watson Assistant Workspace Id     |
    | AUTHORIZED_USERS       | test:password                                |
 
